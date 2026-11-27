@@ -7,7 +7,13 @@ const navLinks = [
   {label: "Contact", href:"#contact"},
 ];
 
-import Hero from "@/components/Hero";
+/* this is for the hero section */
+import Hero from "@/components/Hero"; 
+import InfoGrid from "@/components/InfoGrid";
+
+/* this is for the info grid section  */
+
+import InfoGrio from "@/components/InfoGrid";
 
 export default function Home() {
   return (
@@ -31,7 +37,8 @@ export default function Home() {
       {/* Main content */}
       <main className = "flex-1">
         <div className="mx-auto max-w-3xl px-6 py-16 md:px-10">
-          <Hero /> {}
+          <Hero /> 
+          <InfoGrid />
         </div>
       </main>
     </div>
