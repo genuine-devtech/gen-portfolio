@@ -26,9 +26,24 @@ export default function Hero() {
                 <h1 className = "font-mono text-4x1"> Genuine Espiritu </h1>
 
                 <p className = "leading-loose text-muted">
-                    
+                    I design <Chip>graphics</Chip> and <Chip>websites</Chip>, and I&apos;m studying to become a 
+                    <Chip>full-stack </Chip> developer.
                 </p>
+
+                <div className = "flex flex-wrap gap-4 font-mono text-xs">
+                    {socials.map((social) => (
+                        <a
+                        key = {social.label}
+                        href = {social.href}
+                        target = "_blank"
+                        rel="noonpener noreferrer"
+                        className = "text-muted hover:text-foreground"
+                        >
+                            {social.label}
+                        </a>
+                    ))}
+                </div>
             </div>
         </section> 
-    )
+    );
 }

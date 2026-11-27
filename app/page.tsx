@@ -7,6 +7,8 @@ const navLinks = [
   {label: "Contact", href:"#contact"},
 ];
 
+import Hero from "@/components/Hero";
+
 export default function Home() {
   return (
     <div className = "flex min-h-screen">
@@ -29,7 +31,7 @@ export default function Home() {
       {/* Main content */}
       <main className = "flex-1">
         <div className="mx-auto max-w-3xl px-6 py-16 md:px-10">
-          <p className = "text-muted">Main content goes here. </p>
+          <Hero /> {}
         </div>
       </main>
     </div>
